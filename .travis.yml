@@ -15,4 +15,4 @@ include:
 #command to run tests
 
 script:
-  - pytest 
+  - compute_easter_date
