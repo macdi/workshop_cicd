@@ -14,7 +14,7 @@ install:
 
 #command to run tests
 script:
-  - python test_compute_easter_date.py
+  - coverage run test_compute_easter_date.py
 
 after_success:
   - codecov
