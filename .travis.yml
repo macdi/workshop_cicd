@@ -17,4 +17,4 @@ script:
   - coverage run test_compute_easter_date.py
 
 after_success:
-  - codecov
+  - codecov -t fccb67cc-2da0-44b9-af5f-074402cd2607
