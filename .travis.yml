@@ -3,16 +3,12 @@ language: python
 python:
   - '3.5'
 
-# command to install dependencies
-install:
-  - pip install -r requirements.txt
-
 include:
   - name: "3.5 Unit Test"
     python: "3.5"
     env: TEST_SUITE=suite_3_5_unit
 
-#command to run tests
 
+#command to run tests
 script:
   - compute_easter_date
