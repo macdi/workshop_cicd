@@ -11,4 +11,4 @@ include:
 
 #command to run tests
 script:
-  - compute_easter_date
+  - python compute_easter_date.py
