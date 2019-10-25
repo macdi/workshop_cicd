@@ -1,2 +1,10 @@
 language: python
 
+python:
+  - '3.5'
+
+include:
+  - name: "3.5 Unit Test"
+    python: "3.5"
+    env: TEST_SUITE=suite_3_5_unit
+
