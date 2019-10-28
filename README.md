@@ -1,1 +1,1 @@
-training workshop for cicd pipeline
+Workshop to setup a CI/CD pipeline.
