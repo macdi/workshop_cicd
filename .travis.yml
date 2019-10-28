@@ -8,7 +8,13 @@ include:
     python: "3.5"
     env: TEST_SUITE=suite_3_5_unit
 
+# Install the codecov pip dependency
+install:
+  - pip install codecov
 
 #command to run tests
 script:
-  - python test_compute_easter_date.py
+  - coverage run test_compute_easter_date.py
+
+after_success:
+  - codecov -t fccb67cc-2da0-44b9-af5f-074402cd2607

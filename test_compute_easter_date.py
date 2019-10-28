@@ -19,6 +19,16 @@ class TestComputeEasterDate(unittest.TestCase):
         self.assertEquals(4, result[0])
         self.assertEquals(21, result[1] + 1)
 
+        annee_2020 = 2020
+        result = compute_easter_date(annee_2020)
+        self.assertEquals(4, result[0])
+        self.assertEquals(12, result[1] + 1)
+
+        annee_2021 = 2021
+        result = compute_easter_date(annee_2021)
+        self.assertEquals(4, result[0])
+        self.assertEquals(12, result[1] + 1)
+
 
 if __name__ == '__main__':
     unittest.main()
